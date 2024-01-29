@@ -26,9 +26,39 @@ a {
 .container {
     width: 1200px;
     margin: auto;
-    padding: 0 50px;
+    padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 320px;
+    }
 }
