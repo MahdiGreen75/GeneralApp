@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 30%;
+}
+
+@media (max-width: 1000px) {
+    .post {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .post {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .post {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .post {
+        width: 100%;
+    }
+}

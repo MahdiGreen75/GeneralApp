@@ -31,7 +31,7 @@ const Links = () => {
     // check is authenticated?
     // check is admin?
     const isSession = true;
-    const isAdmin = false;
+    const isAdmin = true;
 
     const navlinks = <>
         {

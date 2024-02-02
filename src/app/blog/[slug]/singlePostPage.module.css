@@ -1,0 +1,118 @@
+ .container {
+    display: flex;
+    gap: 100px;
+ }
+
+.imgContainer {
+    flex: 1;
+    width: 500px;
+    position: relative;
+    height: calc(100vh - 200px);
+    /* height: 100vh; */
+ }
+
+ .textContainer {
+    flex-direction: column;
+    display: flex;
+    gap: 50px;
+    flex: 2;
+ }
+
+.img {
+    object-fit: cover;
+}
+
+.avaterImg {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 64px;
+}
+
+.avaterImgDetail {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intor_parent {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.intro {
+    display: flex;
+    gap: 20px;
+}
+
+.detailText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detailTitle {
+    color: gray;
+    font-weight: bold;
+}
+
+.detailValue {
+    font-weight: 500;
+}
+
+.content {
+    font-size: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+     }
+    
+    .imgContainer {
+        flex: auto;
+        width: 300px;
+        height: 300px;
+
+     }
+    
+     .textContainer {
+        gap: 25px;
+        flex: auto;
+     }
+    
+    .title {
+        font-size: 32px;
+    }
+    
+    .detail {
+        gap: 5px;
+    }
+    
+    .intor_parent {
+        gap: 10px
+    }
+    
+    .intro {
+        gap: 10px;
+    }
+    
+    .content {
+        font-size: 17px;
+    }
+}
