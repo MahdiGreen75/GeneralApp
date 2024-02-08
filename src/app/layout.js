@@ -2,12 +2,14 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Next App',
-  description: 'Next.js starter app',
+  title: {
+    default: "Next.js 14 Hompepage",
+    template: "%s | Next.js 14",
+  },
+  description: 'Next.js sample description',
 }
 
 export default function RootLayout({ children }) {

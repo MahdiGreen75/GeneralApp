@@ -12,10 +12,19 @@
 }
 
 .menuButton {
+    background-color: transparent;
+    color: white;
     display: none;
+    font-size: 48px;
+}
+
+.imgHamburger {
+    background-color: transparent;
 }
 
 .mobileLinks {
+    z-index: 999;
+    position: relative;
     display: none;
 }
 
@@ -31,11 +40,12 @@
     
     .mobileLinks {
         position: absolute;
-        top: 100px;
+        top: 65px;
+        bottom: 0;
         right: 0;
         width: 50%;
-        height: calc(100vh-100px);
-        background-color: rebeccapurple;
+        height: calc(100vh - 100px);
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;

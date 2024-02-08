@@ -2,6 +2,7 @@
 import { useState } from "react";
 import styles from "./Links.module.css"
 import NavLink from "./NavLink/NavLink";
+import Image from "next/image";
 
 const links = [
     {
@@ -61,7 +62,9 @@ const Links = () => {
             <div className={styles.links}>
                 {navlinks}
             </div>
-            <button className={styles.menuButton} onClick={() => setOpen((prev) => !prev)}>Menu</button>
+            <button className={styles.menuButton} onClick={() => setOpen((prev) => !prev)}>
+                &#8801;
+            </button>
             {
                 open &&
                 <div className={styles.mobileLinks}>
